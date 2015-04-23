@@ -14,6 +14,7 @@
 		B8B795941AE8A3110054E872 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B795931AE8A3110054E872 /* Images.xcassets */; };
 		B8B795971AE8A3110054E872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B795951AE8A3110054E872 /* LaunchScreen.xib */; };
 		B8B795A31AE8A3110054E872 /* ObjcHookerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B795A21AE8A3110054E872 /* ObjcHookerTests.m */; };
+		B8B795AE1AE8A5860054E872 /* ObjcHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B795AD1AE8A5860054E872 /* ObjcHooker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B8B7959C1AE8A3110054E872 /* ObjcHookerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcHookerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B795A11AE8A3110054E872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B795A21AE8A3110054E872 /* ObjcHookerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcHookerTests.m; sourceTree = "<group>"; };
+		B8B795AC1AE8A5860054E872 /* ObjcHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcHooker.h; sourceTree = "<group>"; };
+		B8B795AD1AE8A5860054E872 /* ObjcHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcHooker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				B8B7958A1AE8A3110054E872 /* AppDelegate.h */,
 				B8B7958B1AE8A3110054E872 /* AppDelegate.m */,
+				B8B795AC1AE8A5860054E872 /* ObjcHooker.h */,
+				B8B795AD1AE8A5860054E872 /* ObjcHooker.m */,
 				B8B7958D1AE8A3110054E872 /* ViewController.h */,
 				B8B7958E1AE8A3110054E872 /* ViewController.m */,
 				B8B795901AE8A3110054E872 /* Main.storyboard */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B7958F1AE8A3110054E872 /* ViewController.m in Sources */,
+				B8B795AE1AE8A5860054E872 /* ObjcHooker.m in Sources */,
 				B8B7958C1AE8A3110054E872 /* AppDelegate.m in Sources */,
 				B8B795891AE8A3110054E872 /* main.m in Sources */,
 			);

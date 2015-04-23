@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ObjcHooker.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //Way NO.1 add method to hook
+    
+    [ObjcHooker addTargetClass:[ViewController class] targetMethod:@selector(viewDidLoad2) originClass:[ViewController class] originMethod:@selector(viewDidLoad) isInstanceMethod:YES];
+    [ObjcHooker addTargetClass:[ViewController class] targetMethod:@selector(viewDidLoad) originClass:[ObjcHooked class] originMethod:@selector(methodToHook) isInstanceMethod:YES];
+    
+    
+    //Way NO.2 exchange   method Implement
+    
+    //    [ObjcHooker exchangeTargetClass:[ViewController class] targetMethod:@selector(viewDidLoad) originClass:[ObjcHooked class] originMethod:@selector(methodToHook) isInstanceMethod:YES];
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -1,2 +1,5 @@
-# ObjcHooker
-How to hook  on  Objective-C, many ways
+# OjcHooker
+这里头提供了2个函数:
+1.第一个是拷贝函数的实现再替换来hook 
+2.第二个直接是替换了函数的实现来hook
+说白了，就是替换函数的实现去hook。
